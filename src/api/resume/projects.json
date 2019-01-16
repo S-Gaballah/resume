@@ -1,0 +1,37 @@
+[{
+    "position": "GIS Software Developer",
+    "companyName": "Ministry of Municipalities",
+    "CompanyURL": "https://www.mun.gov.bh/portal/",
+    "period": "Feb 2018 - present",
+    "Description": "Creating GIS web solutions for public and municipality employees"
+},{
+    "position": "Software Apps Engineer",
+    "companyName": "Diyar United Company",
+    "CompanyURL": "http://www.diyarme.com/",
+    "period": "Oct 2017 - Jan 2018",
+    "Description": "Modifing and creating web parts using Sharepoint"
+},{
+    "position": "GIS Apps Engineer",
+    "companyName": "Openware",
+    "CompanyURL": "http://www.openware.com.kw",
+    "period": "Dec 2015 - Sep 2017",
+    "Description": "Working on multible GIS apps for <a href='http://www.paci.gov.kw' target='blank'>Public Authority for Civil Information</a>, Kuwait."
+}, {
+    "position": "GIS Web Developer",
+    "companyName": "MCE",
+    "CompanyURL": "https://muhaid.com",
+    "period": "June 2015 - Dec 2015",
+    "Description": "Working in scrum team on multible GIS apps for <a href='https://www.eamana.gov.sa/' target='blank'>Eastern Municipality</a>, KSA."
+}, {
+    "position": "GIS Web Developer",
+    "companyName": "Alkan Arabia",
+    "CompanyURL": "http://www.alkancit.com",
+    "period": "August 2013 - June 2015",
+    "Description": "Working on multible GIS apps for <a href='https://www.alriyadh.gov.sa/en' target='blank'>Riyadh Municipality</a> ,GIS Center, KSA."
+}, {
+    "position": "GIS Developer/Specialist",
+    "companyName": "CAPMAS",
+    "CompanyURL": "http://capmas.gov.eg/",
+    "period": "Jan 2012 - August 2013",
+    "Description": "Working on Egypt Census map production."
+}]
