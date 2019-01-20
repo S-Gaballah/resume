@@ -1,0 +1,91 @@
+<section class="hero is-light is-medium">
+    <div class="hero-body">
+        <div class="columns is-centered">
+            <div class="column  is-one-quarter">
+                <div class="card">
+                    <div class="card-image ">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="">
+
+
+        <div class="columns">
+            <div class="column is-three-quarters">
+                <div class="content is-medium">
+                    <h1>{{profile?.title}}</h1>
+                    <p>{{profile?.objective}}</p>
+                </div>
+
+                <div class="content is-medium">
+                    <h1>{{workHistory?.title}}</h1>
+                    <div class="left-indentation" *ngFor="let history of workHistory?.history;let i = index ">
+                        <h5>{{i == 0 ? 'Working' : 'Worked'}} at
+                            <a [href]="history.companyURL" target="_blank">{{history.companyName}}</a>
+                            as {{history.position}} ({{history.period}})
+                        </h5>
+                        <div class="left-indentation bottom-indentation" *ngFor="let project of history?.projects">
+                            <h6>
+                                <a *ngIf="project.url" [href]="project.url" target="_blank">{{project.name}}</a>
+                                <p *ngIf="!project.url">{{project.name}}</p>
+                            </h6>
+                            <p class="left-indentation" [innerHTML]="project.description"></p>
+                            <div class="left-indentation">
+                                <span *ngFor="let tech of project?.usedTech" class="tag is-primary">{{tech}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="column is-one-quarter">
+                <div class="content is-small">
+                    <h1>GIS Skills</h1>
+                    <div class="item" *ngFor="let skill of skillSet?.gis">
+                        <h6>{{skill.name}} <span class="skillevel">{{skill.level}}</span></h6>
+                        <progress class="progress is-primary is-small" [value]="skill.value" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="content is-small">
+                    <h1>Skills</h1>
+                    <div class="item" *ngFor="let skill of skillSet?.nongis">
+                        <h6>{{skill.name}} <span class="skillevel">{{skill.level}}</span></h6>
+                        <progress class="progress is-primary is-small" [value]="skill.value" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

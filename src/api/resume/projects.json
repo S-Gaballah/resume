@@ -1,37 +1,36 @@
 [{
-    "position": "GIS Software Developer",
-    "companyName": "Ministry of Municipalities",
-    "CompanyURL": "https://www.mun.gov.bh/portal/",
-    "period": "Feb 2018 - present",
-    "Description": "Creating GIS web solutions for public and municipality employees"
+    "name": "PACI Real-time Data Analyzer",
+    "startDate": "Nov 2016",
+    "description": "GIS Web Application implements Real-time data visualization for <a href='http://gis.paci.gov.kw/Client/EN/Default.aspx' target='blank'>Kuwait finder</a> users. Analyze real-time data to create live dashboard like active users, speed, and entry beat. Track users by specific time or latest feeds. Send notification to users who enter specific area (Geo-fence). Add heatmap for traffic Jam areas.",
+    "usedTech":["HighCharts", "JQuery","HTML", "ArcGIS API for JS", "Bootstrap","GeoEvent Server", "TFS"],
+    "screenshot":"../app/assets/images/prda.jpg"
 },{
-    "position": "Software Apps Engineer",
-    "companyName": "Diyar United Company",
-    "CompanyURL": "http://www.diyarme.com/",
-    "period": "Oct 2017 - Jan 2018",
-    "Description": "Modifing and creating web parts using Sharepoint"
+    "name": "National Register of State Land",
+    "startDate": "Sept 2016",
+    "description": "A prototype (demonstrator) of the NRSL created to help future users of the NRSL to understand what it will be and what type of functionality they can expect. The prototype developed on a Geographic Information System, included just a subset of the business requirements of the final NRSL and cover a small geographical area of Kuwait. The prototype provided a key channel for engaging with key stakeholders across the land sector.",
+    "usedTech":["HTML","JQuery", "ArcGIS API for JS", "Bootstrap", "TFS"],
+    "screenshot":"../app/assets/images/nrsl.jpg"
+
 },{
-    "position": "GIS Apps Engineer",
-    "companyName": "Openware",
-    "CompanyURL": "http://www.openware.com.kw",
-    "period": "Dec 2015 - Sep 2017",
-    "Description": "Working on multible GIS apps for <a href='http://www.paci.gov.kw' target='blank'>Public Authority for Civil Information</a>, Kuwait."
-}, {
-    "position": "GIS Web Developer",
-    "companyName": "MCE",
-    "CompanyURL": "https://muhaid.com",
-    "period": "June 2015 - Dec 2015",
-    "Description": "Working in scrum team on multible GIS apps for <a href='https://www.eamana.gov.sa/' target='blank'>Eastern Municipality</a>, KSA."
-}, {
-    "position": "GIS Web Developer",
-    "companyName": "Alkan Arabia",
-    "CompanyURL": "http://www.alkancit.com",
-    "period": "August 2013 - June 2015",
-    "Description": "Working on multible GIS apps for <a href='https://www.alriyadh.gov.sa/en' target='blank'>Riyadh Municipality</a> ,GIS Center, KSA."
-}, {
-    "position": "GIS Developer/Specialist",
-    "companyName": "CAPMAS",
-    "CompanyURL": "http://capmas.gov.eg/",
-    "period": "Jan 2012 - August 2013",
-    "Description": "Working on Egypt Census map production."
+    "name": "Khafji Joint Operations - KJO",
+    "subtitle":"POC",
+    "url":"",
+    "startDate": "June 2016",
+    "description": "Incident management service integrates the capabilities of GIS and AtHoc notification system",
+    "usedTech":["AtHoc","ASP.NET", "ArcGIS API for JS", "AngularJS", "AngularUI", "Angular Material"],
+    "screenshot":"../app/assets/images/prda.jpg"
+},{
+    "name": "Openware Website",
+    "startDate": "March 2016",
+    "url":"http://openware.com.kw",
+    "description": "Create careers and events admin pages for marketing and HR teams. Fixand maintain some bugs and add some functionality to funerals page",
+    "usedTech":["HTML","AngularJS", "AngularUI", "Angular Material","ArcGIS API for JavaScript"],
+    "screenshot":"../app/assets/images/nrsl.jpg"
+},{
+    "name": "OpenEye AVLs - Automatic Vehicle Location",
+    "startDate": "Jan 2016",
+    "url":"http://openeye.duc.com.kw/OpenEyeMobile/",
+    "description": "Responsive JavaScript version from OpenEye WPF.Recieving stream data as XML including spatial information to display and track on map",
+    "usedTech":["HTML","AngularJS", "AngularUI", "Angular Material","ArcGIS API for JavaScript"],
+    "screenshot":"../app/assets/images/openeye.jpg"
 }]

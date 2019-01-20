@@ -3,130 +3,143 @@
         {
             "name": "JavaScript & TypeScript",
             "value": 90,
-            "level": "Pro"
+            "level": "work experience"
         },
         {
-            "name": "Angular2",
-            "value": 70,
-            "level": "Self study"
+            "name": "Angular",
+            "value": 75,
+            "level": "work experience"
+        },
+        {
+            "name": "Angular Material",
+            "value": 75,
+            "level": "work experience"
         },
         {
             "name": "JQuery",
-            "value": 80,
-            "level": "pro"
-        },
-        {
-            "name": "C#.NET",
             "value": 75,
-            "level": "Good",
-            "hint": "I haven't used them for long time"
+            "level": "work experience"
         },
         {
             "name": "LinQ",
             "value": 80,
-            "level": "V.Good",
-            "hint": "I haven't used them for long time"
+            "level": "work experience"
         },
         {
-            "name": "C# & ASP.NET",
+            "name": "C#.NET & ASP.NET",
             "value": 75,
-            "level": "Good",
-            "hint": "I haven't used them for long time"
+            "level": "work experience"
+        },
+        {
+            "name": "WCF & Web Services",
+            "value": 75,
+            "level": "work experience"
+        },
+        {
+            "name": "HTML, Material Design & CSS",
+            "value": 70,
+            "level": "work experience"
+        },
+        {
+            "name": "SQL Server, Oracle (SQL- SQL PL)",
+            "value": 85,
+            "level": "work experience"
         },
         {
             "name": "Silverlight",
             "value": 70,
-            "level": "Good",
-            "hint": "I haven't used them for long time"
-        },
-        {
-            "name": "Web Services using ASP.Net",
-            "value": 75,
-            "level": "Good",
-            "hint": "I haven't used them for long time"
-        },
-        {
-            "name": "WCF",
-            "value": 75,
-            "level": "Good",
-            "hint": "I haven't used them for long time"
+            "level": "previous experience"
         },
         {
             "name": "Web API",
-            "value": 80,
-            "level": "Good"
+            "value": 70,
+            "level": "previous experience"
         },
         {
             "name": "AngularJS & AngularUI",
-            "value": 80,
-            "level": "V.Good"
+            "value": 70,
+            "level": "previous experience"
         },
         {
             "name": "HighCharts",
             "value": 85,
-            "level": "V.Good"
+            "level": "previous experience"
         },
+
         {
-            "name": "FireBase",
-            "value": 70,
+            "name": "ReactJS",
+            "value": 60,
             "level": "Self Study"
         },
         {
-            "name": "Bootstrap, Material Design & CSS",
-            "value": 70,
-            "level": "Good"
+            "name": "MeteorJS",
+            "value": 50,
+            "level": "Self Study"
         }
     ],
-    "gis": [{
-        "name": "ArcGIS API for JavaScript",
-        "value": 90,
-        "level": "Pro"
-    }, {
-        "name": "ArcGIS API for Silverlight",
-        "value": 75,
-        "level": "Good",
-        "tooltip": "I haven't used them for long time because it's depricated"
-    }, {
-        "name": "ArcGIS for Server",
-        "value": 80,
-        "level": "Pro"
-    }, {
-        "name": "ArcGIS API for Portal",
-        "value": 75,
-        "level": "Good"
-    }, {
-        "name": "Web App Builder for ArcGIS",
-        "value": 80,
-        "level": "Good"
-    }, {
-        "name": "ArcGIS Rest API",
-        "value": 85,
-        "level": "V.Good"
-    }, {
-        "name": "AppStudio for ArcGIS",
-        "value": 60,
-        "level": "Good",
-        "tooltip": "POC"
-    }, {
-        "name": "ArcGIS for Desktop (Map - Catalog)",
-        "value": 75,
-        "level": "Good",
-        "tooltip": "I have previous Two years experience"
-    }, {
-        "name": "GeoEvent Server - Real-time GIS Applications",
-        "value": 80,
-        "level": "Good",
-        "tooltip": "Self Study and POC"
-    }, {
-        "name": "ArcGIS SDK for Qt",
-        "value": 70,
-        "level": "Good",
-        "tooltip": "Self Study and POC- small app created"
-    },
-    {
-        "name": "Google Maps API",
-        "value": 70,
-        "level": "Good",
-        "tooltip": "I haven't used them for long time"
-    }]
+    "gis": [
+        {
+            "name": "ArcGIS API for JavaScript - DOJO",
+            "value": 90,
+            "level": "work experience"
+        },
+       
+        {
+            "name": "ArcGIS for Server",
+            "value": 80,
+            "level": "work experience"
+        },
+        {
+            "name": "ArcGIS API for Portal",
+            "value": 75,
+            "level": "good"
+        },
+        {
+            "name": "Web App Builder for ArcGIS",
+            "value": 80,
+            "level": "previous experience"
+        },
+        {
+            "name": "ArcGIS Rest API",
+            "value": 85,
+            "level": "work experience"
+        },
+        {
+            "name": "ArcGIS for Desktop (Map - Catalog)",
+            "value": 75,
+            "level": "work experience"
+        },
+        {
+            "name": "GeoEvent Server - Real-time GIS Applications",
+            "value": 80,
+            "level": "work experience"
+        },
+        {
+            "name": "Google Maps API",
+            "value": 70,
+            "level": "Previous project experience"
+        },
+        {
+            "name": "ArcGIS API for Silverlight",
+            "value": 75,
+            "level": "previous experience"
+        },
+        {
+            "name": "AppStudio for ArcGIS",
+            "value": 60,
+            "level": "POC"
+        },
+        {
+            "name": "ArcGIS SDK for Qt",
+            "value": 50,
+            "level": "POC"
+        }
+    ],
+    "soft": [
+        "Have experience in Scrum framework",
+        "Interactive and fast enough to learn new technologies.",
+        "Ability to work in a group or individually according to the job requirements.",
+        "Highly motivated, energetic and willing to take ownership",
+        "Advanced research abilities."
+    ]
 }

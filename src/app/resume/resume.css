@@ -1,0 +1,33 @@
+.skillevel{
+    color: #ccd1d6;
+    float: right;
+}
+
+.skillTitle{
+    
+}
+
+.item{
+    margin-bottom: 0.9em;
+}
+
+.content h6{
+    margin-bottom: 0.3em;
+}
+
+
+.left-indentation{
+    margin-left: 1.2em;
+}
+
+.bottom-indentation{
+    margin-bottom: 1em !important;
+}
+
+.content p:not(:last-child){
+    margin-bottom: 0em
+}
+
+.tag{
+    margin-right: 0.5em;
+}
