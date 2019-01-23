@@ -1,0 +1,57 @@
+{
+    "title": "Courses",
+    "providers":[
+        {
+            "name":"Udemy online courses",
+            "courses":[
+                {
+                    "name" : "Full Stack Web Apps with Meteor and React",
+                    "when": "June 2017"
+                }, {
+                    "name" : "Learn the essentials of python and ArcGIS’s ArcPY",
+                    "when":"Jan 2017"
+                }
+                
+            ]
+        },{
+            "name":"Pluralsight courses",
+            "courses":[
+                {
+                    "name" : "Building Applications with React and Redux in ES6",
+                    "when": "June 2017"
+                }, {
+                    "name" : "Getting Started – June 2017",
+                    "when": "June 2017"
+                }
+            ]
+        },{
+            "name":"Esri’s MOOCs",
+            "courses":[
+                {
+                    "name" : "Do-It-Yourself Geo Apps",
+                    "when": "February 2016"
+                }, {
+                    "name" : "Maps and the Geospatial Revolution",
+                    "when":"Summer 2014"
+                }
+                
+            ]
+        },{
+            "name":"IT Share training center",
+            "courses":[
+                {
+                    "name" : "Microsoft Certified Professional Developer - MCPD",
+                    "when": "Summer 2010"
+                }
+            ]
+        },{
+            "name":"Egyptian Survey Authority",
+            "courses":[
+                {
+                    "name" : "Advanced Geographic Information Systems",
+                    "when": "Summer 2009"
+                }
+            ]
+        }
+    ]
+}

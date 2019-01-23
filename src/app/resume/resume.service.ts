@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse,HttpResponse } from '@angular/common/http';
+import { ResponseContentType } from '@angular/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
 
@@ -8,7 +9,7 @@ import { catchError, tap, map } from 'rxjs/operators';
     providedIn: 'root'
   })
   export class ResumeService {
-    private baseUrl = 'src/api/resume/';
+    private baseUrl = 'assets/resume/';
 
     constructor(private http: HttpClient) { }
 
@@ -32,6 +33,53 @@ import { catchError, tap, map } from 'rxjs/operators';
           catchError(this.handleError)
         );
       }
+
+      getCertificates(): Observable<object> {
+        return this.http.get(this.baseUrl + "certificates.json").pipe(
+          map(results => results),
+          catchError(this.handleError)
+        );
+      }
+
+      getConferences(): Observable<object> {
+        return this.http.get(this.baseUrl + "conferences.json").pipe(
+          map(results => results),
+          catchError(this.handleError)
+        );
+      }
+
+      getCourses(): Observable<object> {
+        return this.http.get(this.baseUrl + "courses.json").pipe(
+          map(results => results),
+          catchError(this.handleError)
+        );
+      }
+
+      getEducation(): Observable<object> {
+        return this.http.get(this.baseUrl + "education.json").pipe(
+          map(results => results),
+          catchError(this.handleError)
+        );
+      }
+
+      downloadFile(path: string) {
+        return this.http
+          .get(path, {
+           responseType: 'blob'
+          })
+          .subscribe(res => {
+              debugger
+               var url = window.URL.createObjectURL(res);
+               var a = document.createElement('a');
+               document.body.appendChild(a);
+               a.setAttribute('style', 'display: none');
+               a.href = url;
+               a.download = path.split('/').pop();
+               a.click();
+               window.URL.revokeObjectURL(url);
+               a.remove(); // remove the element
+            }, error => this.handleError(error));
+        }
 
     private handleError(err: HttpErrorResponse) {
         // in a real world app, we may send the server to some remote logging infrastructure

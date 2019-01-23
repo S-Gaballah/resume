@@ -1,13 +1,14 @@
 {
     "title":"Objective",
-    "imgsrc": "",
+    "imgsrc": "assets/logo.jpeg",
     "name": "Sherif Gaballah",
-    "position": "GIS Web Developer",
-    "mobileNumber": "+201027696062 , +96569604108",
+    "position": "GIS Software Developer",
+    "mobileNumber": "+97333643679 - +201027696062",
     "currentLocation": "Bahrain",
     "nationality": "Egyptian",
+    "pdfsrc":"assets/Sherif Gaballah - GIS Developer.pdf",
     "email": "sherif.abdelmoniem88@gmail.com",
-    "website": "https://github.com/S-Gaballah",
+    "github": "https://github.com/S-Gaballah",
     "linkedin":"https://www.linkedin.com/in/sherifgis/",
     "objective":"Software developer has the passion for everything related to software development specially GIS and Frontend. Also certified scrum master who is able to work with scrum team to deliver the most applicable product value to the client."
 }

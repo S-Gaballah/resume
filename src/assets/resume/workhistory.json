@@ -1,17 +1,17 @@
 {
     "title": "Work History",
-    "history": [
+    "items": [
         {
             "position": "GIS Software Developer",
             "companyName": "Ministry of Municipalities",
             "companyURL": "https://www.mun.gov.bh/portal/",
             "period": "Feb 2018 - present",
             "description": "Creating GIS web solutions for public and municipality employees",
-            "projects":[
+            "projects": [
                 {
                     "name": "Parcel Locator",
                     "duration": "3 months",
-                    "description": ".",
+                    "description": "Allow employees to locate parcels using multiple search capabilities",
                     "usedTech": [
                         "ArcGIS API for JavaScript",
                         "Angular",
@@ -26,8 +26,8 @@
                 {
                     "name": "geoViewer",
                     "duration": "3 months",
-                    "description": ".",
-                    "url":"http://geoviewer.sherifgaballah.com",
+                    "description": "GIS based viewer including TOC, Printing, Drawing Tools, Search, and Identify",
+                    "url": "http://geoviewer.sherifgaballah.com",
                     "usedTech": [
                         "ArcGIS API for JavaScript",
                         "Angular",
@@ -40,8 +40,8 @@
                 {
                     "name": "Realtime Vehicle Tracking",
                     "duration": "3 months",
-                    "description": ".",
-                    "url":"http://rvt.sherifgaballah.com",
+                    "description": "Another implementation for PACI Realtime Data Analyzer using Angular",
+                    "url": "http://rvt.sherifgaballah.com",
                     "usedTech": [
                         "ArcGIS API for JavaScript",
                         "Angular",
@@ -58,7 +58,41 @@
             "companyName": "Diyar United Company",
             "companyURL": "http://www.diyarme.com/",
             "period": "Oct 2017 - Jan 2018",
-            "description": "Modifing and creating web parts using Sharepoint"
+            "description": "Modifing and creating web parts using Sharepoint",
+            "projects": [
+                {
+                    "name": "Electronic Driving License – eDL",
+                    "description": "Creating REST endpoint web service used by web and mobile applications",
+                    "usedTech": [
+                        "WCF",
+                        "C#",
+                        "Entity Framework",
+                        "LINQ"
+                    ]
+                },
+                {
+                    "name": "CITRA",
+                    "description": "Creating REST endpoint web service used by web and mobile applications",
+                    "usedTech": [
+                        "WCF",
+                        "C#",
+                        "Entity Framework",
+                        "LINQ"
+                    ]
+                },
+                {
+                    "name": "Correspondence System",
+                    "description": "Creating multiple web parts which enables users to search using multiple filters",
+                    "usedTech": [
+                        "Sharepoint",
+                        "C#",
+                        "ASP.NET",
+                        "JavaScript",
+                        "SQL Server",
+                        "LINQ"
+                    ]
+                }
+            ]
         },
         {
             "position": "GIS Apps Engineer",
@@ -68,8 +102,7 @@
             "description": "Working on multible GIS apps for <a href='http://www.paci.gov.kw' target='blank'>Public Authority for Civil Information</a>, Kuwait.",
             "projects": [
                 {
-                    "name": "PACI Real-time Data Analyzer",
-                    "duration": "3 months",
+                    "name": "PACI Realtime Data Analyzer",
                     "description": "GIS Web Application implements Real-time data visualization for <a href='http://gis.paci.gov.kw/Client/EN/Default.aspx' target='blank'>Kuwait finder</a> users. Analyze real-time data to create live dashboard like active users, speed, and entry beat. Track users by specific time or latest feeds. Send notification to users who enter specific area (Geo-fence). Add heatmap for traffic Jam areas.",
                     "usedTech": [
                         "HighCharts",
@@ -77,34 +110,26 @@
                         "HTML",
                         "ArcGIS API for JavaScript",
                         "Bootstrap",
-                        "GeoEvent Server",
-                        "TFS"
-                    ],
-                    "screenshot": "../app/assets/images/prda.jpg"
+                        "GeoEvent Server"
+                    ]
                 },
                 {
                     "name": "National Register of State Land",
-                    "duration": "3 months",
-                    "description": "A prototype (demonstrator) of the NRSL created to help future users of the NRSL to understand what it will be and what type of functionality they can expect. The prototype developed on a Geographic Information System, included just a subset of the business requirements of the final NRSL and cover a small geographical area of Kuwait. The prototype provided a key channel for engaging with key stakeholders across the land sector.",
+                    "description": "Asset management app enables government sector to know all available information about their assets and how it's used including documents, leases, and oil companies buffer zones",
                     "usedTech": [
                         "HTML",
                         "JQuery",
-                        "ArcGIS API for JS",
-                        "Bootstrap",
-                        "TFS"
-                    ],
-                    "screenshot": "../app/assets/images/nrsl.jpg"
+                        "ArcGIS API for JavaScript",
+                        "Bootstrap"
+                    ]
                 },
                 {
                     "name": "Khafji Joint Operations - KJO",
-                    "subtitle": "POC",
-                    "url": "",
-                    "duration": "one month",
                     "description": "Incident management service integrates the capabilities of GIS and AtHoc notification system",
                     "usedTech": [
                         "AtHoc",
-                        "ASP.NET",
-                        "ArcGIS API for JS",
+                        "HTML",
+                        "ArcGIS API for JavaScript",
                         "AngularJS",
                         "AngularUI",
                         "Angular Material"
@@ -113,21 +138,19 @@
                 },
                 {
                     "name": "Openware Website",
-                    "startDate": "March 2016",
                     "url": "http://openware.com.kw",
-                    "description": "Create careers and events admin pages for marketing and HR teams. Fixand maintain some bugs and add some functionality to funerals page",
+                    "description": "Create careers and events admin pages for marketing and HR teams. Fix and maintain some bugs and add some functionality to funerals page",
                     "usedTech": [
                         "HTML",
+                        "ASP.NET",
                         "AngularJS",
                         "AngularUI",
                         "Angular Material",
                         "ArcGIS API for JavaScript"
-                    ],
-                    "screenshot": "../app/assets/images/nrsl.jpg"
+                    ]
                 },
                 {
                     "name": "OpenEye AVLs - Automatic Vehicle Location",
-                    "startDate": "Jan 2016",
                     "url": "http://openeye.duc.com.kw/OpenEyeMobile/",
                     "description": "Responsive JavaScript version from OpenEye WPF.Recieving stream data as XML including spatial information to display and track on map",
                     "usedTech": [
@@ -136,8 +159,7 @@
                         "AngularUI",
                         "Angular Material",
                         "ArcGIS API for JavaScript"
-                    ],
-                    "screenshot": "../app/assets/images/openeye.jpg"
+                    ]
                 }
             ]
         },
@@ -147,26 +169,29 @@
             "companyURL": "https://muhaid.com",
             "period": "June 2015 - Dec 2015",
             "description": "Working in scrum team on multible GIS apps for <a href='https://www.eamana.gov.sa/' target='blank'>Eastern Municipality</a>, KSA.",
-            "projects":[
+            "projects": [
                 {
-                    "name": "Web AppBuilder for ArcGIS",
-                    "duration": "3 months",
+                    "name": "Gis Map Explorer",
                     "description": "Web AppBuilder is a configurable application developed by Esri to enable normal user to create their own application based on ArcGIS Online account. I configured and managed existing widgets like Attribute table and created new customized widgets.",
+                    "url": "http://webgis.eamana.gov.sa/gis/#/maps",
                     "usedTech": [
                         "ArcGIS API for JavaScript",
                         "AngularJS",
                         "JavaScript",
-                        "TFS"
+                        "TFS",
+                        "ArcGIS Online"
                     ]
-                },{
+                },
+                {
                     "name": "Split & Merge",
-                    "duration": "3 months",
-                    "description": "Web AppBuilder is a configurable application developed by Esri to enable normal user to create their own application based on ArcGIS Online account. I configured and managed existing widgets like Attribute table and created new customized widgets.",
+                    "url": "http://webgis.eamana.gov.sa/gis/#/split-merge",
+                    "description": "Web based application enables users to submit new request to split or merge their empty land or duplex",
                     "usedTech": [
                         "ArcGIS API for JavaScript",
                         "AngularJS",
                         "JavaScript",
-                        "TFS"
+                        "TFS",
+                        "ArcGIS for Server"
                     ]
                 }
             ]
@@ -177,37 +202,30 @@
             "companyURL": "http://www.alkancit.com",
             "period": "August 2013 - June 2015",
             "description": "Working on multible GIS apps for <a href='https://www.alriyadh.gov.sa/en' target='blank'>Riyadh Municipality</a> ,GIS Center, KSA.",
-            "projects":[
+            "projects": [
                 {
                     "name": "Survey report",
-                    "duration": "3 months",
                     "description": "Online service enable citizens to create new request for survey report for 30 purpose like building license, split & merge parcels, and others. Citizen or its representative Create request based on Baladiya where parcel located, attach required documents and draw the proposed situation on map if required. Employee receive this request and generate survey report after reviewing and validating it with technical requirements.",
                     "usedTech": [
                         "WCF",
                         "ArcGIS API for Silverlight",
                         "C#",
-                        "TFS"
+                        "TFS",
+                        "Oracle DB"
                     ]
-                }, {
+                },
+                {
                     "name": "Support System",
-                    "duration": "3 months",
                     "description": "Supplementary application for Survey Report App but used by Municipality and Baladiya Employees to handle citizen requests to create S.R. Employee can edit, review citizen request, submit S.R and initiate new split request.",
                     "usedTech": [
                         "WCF",
                         "ArcGIS API for Silverlight",
                         "C#",
-                        "TFS"
+                        "TFS",
+                        "Oracle DB"
                     ]
-                }, {
-                    "name": "Reverse Proxy",
-                    "duration": "3 months",
-                    "description": "Implement Proxy server for ArcGIS server 10 based on Application Request Routing (ARR) with IIS 7.",
-                    "usedTech": [
-                        "ARR v2",
-                        "IIS v7",
-                        "ArcGIS for Server 10"
-                    ]
-                }, {
+                },
+                {
                     "name": "Map Explorer – Riyadh",
                     "duration": "3 months",
                     "description": "Interactive map explorer for Riyadh municipality which enable users to do the main functionalities on map like draw, measurements, navigate, query, bookmark, On/Off layers , printing, and sharing map with others via E-mail.",
@@ -215,7 +233,30 @@
                         "ArcGIS API for Silverlight",
                         "C#",
                         "WCF",
-                        "Crystal Reports"
+                        "Crystal Reports",
+                        "ArcGIS for Server"
+                    ]
+                },
+                {
+                    "name": "Map Explorer – Riyadh",
+                    "duration": "3 months",
+                    "description": "Another Implemetation using ArcGIS API for Javascript",
+                    "usedTech": [
+                        "WCF",
+                        "ArcGIS API for JavaScript",
+                        "C#",
+                        "TFS",
+                        "ArcGIS for Server"
+                    ]
+                },
+                {
+                    "name": "Reverse Proxy",
+                    "duration": "3 months",
+                    "description": "Implement Proxy server for ArcGIS server 10 based on Application Request Routing (ARR) with IIS 7.",
+                    "usedTech": [
+                        "ARR v2",
+                        "IIS v7",
+                        "ArcGIS for Server 10"
                     ]
                 }
             ]
@@ -225,7 +266,17 @@
             "companyName": "CAPMAS",
             "companyURL": "http://capmas.gov.eg/",
             "period": "Jan 2012 - August 2013",
-            "description": "Working on Egypt Census map production."
+            "description": "Working on Egypt Census map production.",
+            "projects": [
+                {
+                    "name": "Egypt Census",
+                    "description": "data preparation and map production for 2016 census",
+                    "usedTech": [
+                        "ArcGIS for Desktop",
+                        "ArcGIS for Server"
+                    ]
+                }
+            ]
         }
     ]
 }

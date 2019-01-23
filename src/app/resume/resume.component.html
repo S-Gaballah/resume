@@ -1,91 +1,220 @@
-<section class="hero is-light is-medium">
-    <div class="hero-body">
-        <div class="columns is-centered">
-            <div class="column  is-one-quarter">
-                <div class="card">
+<!-- <section class="section">
+    
+</section> -->
+
+<section class="section">
+    <!-- <div class="container">
+        
+    </div> -->
+    <div class="container">
+        <!-- <div class="columns is-centered">
+
+                    <div class="column  is-one-third" style="min-width: 19em;">
+                        <div class="card is-medium">
+                            <div class="card-image ">
+                                <figure class="image is-3by1" >
+                                    <img class="" src="assets/geeksocial.jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Sherif Gaballah</p>
+                                        <p class="subtitle is-6">GIS Software Developer</p>
+                                    </div>
+                                </div>
+        
+                                <div class="content">
+                                        <p class="left-indentation has-text-justified is-size-6">{{profile?.objective}}</p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-item">
+                                            <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="card-footer-item">
+                                            <a><i class="fab fa-github"></i></a>
+                                    </div>
+                                        
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                </div> -->
+        <div class="columns">
+
+
+
+            <div class="column is-two-fifths bottom-indentation">
+                <!-- <div class="content"> -->
+                <div class="card is-medium bottom-indentation">
                     <div class="card-image ">
-                        <figure class="image is-128x128">
-                            <img class="is-rounded" src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        <figure class="image is-3by2">
+                            <img class="" src="assets/geeksocial.jpg" alt="Geeky">
                         </figure>
                     </div>
                     <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
+                        <div class="media bottom-indentation">
+                          
+                                <div class="media-left">
+                                    <figure class="image is-32x32">
+                                        <img [src]="profile?.imgsrc" alt="Sherif">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">{{profile?.name}}</p>
+                                    <p class="subtitle is-6">{{profile?.position}}</p>
+                             
                             </div>
-                            <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
+
                             </div>
-                        </div>
 
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <p class="bottom-indentation has-text-justified">{{profile?.objective}}</p>
+                            <div class="has-text-centered has-text-weight-semibold">
+                                <p class=""><i class="fas fa-envelope"></i> {{profile?.email}}</p>
+                                <p class=""><i class="fas fa-mobile-alt"></i>{{profile?.mobileNumber}}</p>
+                            </div>
                         </div>
+                        <div class="card-footer">
+                            <div class="card-footer-item">
+                                <i class="fab fa-linkedin clickable" (click)="goToLink(profile?.linkedin)"></i>
+
+                            </div>
+                            <div class="card-footer-item">
+                                <i class="fab fa-github clickable" (click)="goToLink(profile?.github)"></i>
+
+                            </div>
+                            <div class="card-footer-item">
+                                <i class="fas fa-file-pdf clickable" (click)="downloadPDF(profile?.pdfsrc)"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="content is-small box">
+                    <h1>
+                        <i class="fas fa-portrait"></i>
+                        {{profile?.title}}</h1>
+                    <p class="left-indentation has-text-justified is-size-6">{{profile?.objective}}</p>
+                </div> -->
+
+                <div class="content is-small box">
+                    <h1>
+                        <i class="fa fa-certificate"></i>
+                        {{certificates?.title}}</h1>
+                    <div class="left-indentation is-size-6 bottom-indentation" *ngFor="let certificate of certificates?.items">
+                        <h6>
+                            <a [href]="certificate.url" target="_blank">{{certificate.name}}</a>
+                            ({{certificate.code}})
+                        </h6>
+                        <div class="left-indentation">
+                            <p>Active from: {{certificate.activefrom}}</p>
+                            <p *ngIf="certificate.Verification">Verification: {{certificate.Verification}}</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content is-small box">
+                        <h1><i class="fas fa-user-graduate"></i>
+                            {{education?.title}}</h1>
+                        <div class="bottom-indentation is-size-6" *ngFor="let item of education?.items">
+                            <h6>{{item.provider}} {{item.period}}</h6>
+                            <div class="left-indentation">
+                                    <p><span class="has-text-weight-semibold">Degree:</span>  {{item.degree}}</p>
+                                    <p *ngIf="item.track"><span class="has-text-weight-semibold">Track:</span> {{item.track}}</p>
+                                    <p *ngIf="item.section"><span class="has-text-weight-semibold">Section:</span> {{item.section}}</p>
+                                    <p><span class="has-text-weight-semibold">Grade:</span> {{item.grade}}</p>
+                                    <p><span class="has-text-weight-semibold">Project:</span> {{item.project}}</p>
+        
+                                </div>
+                        </div>
+                    </div>
+
+
+                <div class="content is-small box">
+                    <h1>
+                        <i class="fas fa-globe-americas"></i>
+                        GIS skills</h1>
+                    <div class="item " *ngFor="let skill of skillSet?.gis">
+                        <h6>{{skill.name}} <span class="skillevel">{{skill.level}}</span></h6>
+                        <progress class="progress is-primary is-small" [value]="skill.value" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="content is-small box">
+                    <h1>
+                        <i class="fas fa-code"></i>
+                        Coding skills</h1>
+                    <div class="item" *ngFor="let skill of skillSet?.nongis">
+                        <h6>{{skill.name}} <span class="skillevel">{{skill.level}}</span></h6>
+                        <progress class="progress is-primary is-small" [value]="skill.value" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="content is-small box">
+                    <h1>Soft skills</h1>
+                    <ul class="is-size-6">
+                        <li *ngFor="let skill of skillSet?.soft">
+                            <h6>{{skill}}</h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content is-small box">
+                    <h1><i class="fab fa-leanpub"></i>
+                        {{courses?.title}}</h1>
+                    <div class="bottom-indentation is-size-6" *ngFor="let provider of courses?.providers">
+                        <h6>{{provider.name}}</h6>
+                        <ul>
+                            <li *ngFor="let course of provider?.courses">{{course.name}} ({{course.when}})</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="">
-
-
-        <div class="columns">
-            <div class="column is-three-quarters">
+            <div class="column is-three-fifths">
                 <div class="content is-medium">
-                    <h1>{{profile?.title}}</h1>
-                    <p>{{profile?.objective}}</p>
-                </div>
-
-                <div class="content is-medium">
-                    <h1>{{workHistory?.title}}</h1>
-                    <div class="left-indentation" *ngFor="let history of workHistory?.history;let i = index ">
-                        <h5>{{i == 0 ? 'Working' : 'Worked'}} at
+                    <!-- <h3 class="notification is-primary">
+                        <i class="fas fa-history"></i>
+                        {{workHistory?.title}}</h3> -->
+                        <h4>
+                                <i class="fas fa-history"></i>
+                                {{workHistory?.title}}</h4>
+                    <div class="bottom-indentation box" *ngFor="let history of workHistory?.items;let i = index ">
+                        <!-- <h5>{{i == 0 ? 'Working' : 'Worked'}} at
                             <a [href]="history.companyURL" target="_blank">{{history.companyName}}</a>
                             as {{history.position}} ({{history.period}})
+                        </h5> -->
+                        <h5>{{history.position}} at <a [href]="history.companyURL" target="_blank">{{history.companyName}}</a>
+                            ({{history.period}})
                         </h5>
                         <div class="left-indentation bottom-indentation" *ngFor="let project of history?.projects">
                             <h6>
                                 <a *ngIf="project.url" [href]="project.url" target="_blank">{{project.name}}</a>
                                 <p *ngIf="!project.url">{{project.name}}</p>
                             </h6>
-                            <p class="left-indentation" [innerHTML]="project.description"></p>
+                            <p *ngIf="project.description" class="left-indentation" style="font-size:1em;" [innerHTML]="project.description"></p>
                             <div class="left-indentation">
                                 <span *ngFor="let tech of project?.usedTech" class="tag is-primary">{{tech}}</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div class="column is-one-quarter">
-                <div class="content is-small">
-                    <h1>GIS Skills</h1>
-                    <div class="item" *ngFor="let skill of skillSet?.gis">
-                        <h6>{{skill.name}} <span class="skillevel">{{skill.level}}</span></h6>
-                        <progress class="progress is-primary is-small" [value]="skill.value" max="100"></progress>
-                    </div>
-                </div>
 
-                <div class="content is-small">
-                    <h1>Skills</h1>
-                    <div class="item" *ngFor="let skill of skillSet?.nongis">
-                        <h6>{{skill.name}} <span class="skillevel">{{skill.level}}</span></h6>
-                        <progress class="progress is-primary is-small" [value]="skill.value" max="100"></progress>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

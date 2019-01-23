@@ -1,0 +1,21 @@
+{
+    "title": "Education",
+    "items":[
+        {
+            "provider":"Information Technology Institute (ITI), 9 Months Diploma",
+            "period":"2012-2013",
+            "degree":"Post-Graduate Diploma in Information Technology",
+            "track":"System Development (Professional Developer)",
+            "grade":"Excellent (above 85%)",
+            "project":"Agricultural Management System"
+        },
+        {
+            "provider":"Faculty of Arts, Geography Department, Zagazig University",
+            "period":"2006-2010",
+            "degree":"Bachelor of Arts in Geography",
+            "section":"Geographic Information Systems",
+            "grade":"Very Good (81.52%)",
+            "project":"Crisis Management using network analysis"
+        }
+    ]
+}
