@@ -23,6 +23,7 @@ export class ResumeComponent implements OnInit{
         this.resumeService.getConferences().subscribe(results => this.conferences = results);
         this.resumeService.getCourses().subscribe(results => this.courses = results);
         this.resumeService.getEducation().subscribe(results => this.education = results);
+        
     }
 
     goToLink(url: string){
